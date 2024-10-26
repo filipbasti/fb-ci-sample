@@ -35,7 +35,7 @@ jobs:
       with:
         python-version: '3.13' 
     - name: Generate report
-      run: run-report.py
+      run: python run-report.py
       
     
       
