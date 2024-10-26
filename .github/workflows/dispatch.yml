@@ -17,6 +17,9 @@ jobs:
         echo "$CURRENT_DATE"
         echo "Linux date: $(date)"
         echo "github context date: ${{ github.event.repository.pushed_at }}"
-      
+    - name: Dump GitHub context
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: echo "$GITHUB_CONTEXT"
       
       
